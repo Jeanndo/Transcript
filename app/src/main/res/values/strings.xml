@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyTranscript</string>
+    <string name="invalid_name">Your Name Please</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_college">College Name Please</string>
+    <string name="invalid_scholl">School Name Please</string>
+    <string name="invalid_department">Department Name Please</string>
+    <string name="invalid_level">Level / Year of Study</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string-array name="numbers">
+        <item>Which Trancript?</item>
+        <item>1,1</item>
+        <item>1,2</item>
+        <item>2,1</item>
+        <item>2,2</item>
+        <item>3,1</item>
+        <item>3,2</item>
+        <item>4,1</item>
+        <item>4,2</item>
+    </string-array>
+    <string name="title_activity_user_dash_board">UserDashBoard</string>
+    <string name="tab_text_1">Sent</string>
+    <string name="tab_text_2">Inbox</string>
+    <string name="tab_text_3">Profile</string>
+</resources>
