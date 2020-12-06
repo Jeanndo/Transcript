@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/payment_slip"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:hint="payment slip" />
+        <EditText
+            android:id="@+id/editText_transcript_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="number of Transvript"/>
+
+        <Button
+            android:id="@+id/Submit"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Send"
+            android:backgroundTint="@color/blue_wave"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:translationY="85dp"
+            android:background="@drawable/weve3"/>
+    </LinearLayout>
+</LinearLayout>

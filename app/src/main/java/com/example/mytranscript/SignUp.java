@@ -152,23 +152,25 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    sharedPreferences=getSharedPreferences("loginPrefs", Context.MODE_PRIVATE);
+                    sharedPreferences=getSharedPreferences("tokenPrefs", Context.MODE_PRIVATE);
                     String saveToken=response.getString("token");
                     SharedPreferences.Editor editor= sharedPreferences.edit();
                     editor.putString("token",saveToken);
                     editor.commit();
-                    System.out.println(saveToken);
+
                     Toast.makeText(SignUp.this, "User Signed up   Successfully", Toast.LENGTH_SHORT).show();
                     Intent intent= new Intent(SignUp.this,UserDashBoard.class);
                     startActivity(intent);
 
                 } catch (Exception e) {
+
                     e.printStackTrace();
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                System.out.println(error);
 
                 Toast.makeText(SignUp.this,  "Failed", Toast.LENGTH_SHORT).show();
             }

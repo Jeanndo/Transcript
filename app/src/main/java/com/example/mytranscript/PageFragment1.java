@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -17,7 +18,6 @@ public class PageFragment1 extends Fragment {
     private Button startbtn;
     private ImageView skipBtn;
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -27,6 +27,7 @@ public class PageFragment1 extends Fragment {
         View view = inflater.inflate(R.layout.page_1, container, false);
         startbtn = view.findViewById(R.id.starBtn);
         skipBtn = view.findViewById(R.id.skip);
+
 
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override

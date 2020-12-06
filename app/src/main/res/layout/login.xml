@@ -47,6 +47,7 @@
 
 
     <RelativeLayout
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/blue">
@@ -54,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User Name"
+            android:gravity="center"
             android:background="@color/white"
             android:id="@+id/user_name"
             android:translationY="150dp"
@@ -62,9 +64,11 @@
         <EditText
             android:id="@+id/user_pass"
             android:translationY="200dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:inputType="textPassword"
             android:hint="Password"
             android:textSize="20dp" />
         <Button
@@ -80,16 +84,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:translationY="300dp"
-            android:translationX="40dp"
+
             >
 
             <TextView
                 android:id="@+id/forgot_pass"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:textColor="@color/white"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Forget Password"
+                android:textColor="@color/white"
                 android:textSize="20dp" />
 
             <TextView

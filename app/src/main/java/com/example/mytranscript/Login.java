@@ -86,8 +86,9 @@ public class Login extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, jsonObject, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+
                 try {
-                    sharedPreferences=getSharedPreferences("loginPrefs", Context.MODE_PRIVATE);
+                    sharedPreferences=getSharedPreferences("tokenPrefs", Context.MODE_PRIVATE);
                     String saveToken=response.getString("token");
                     SharedPreferences.Editor editor= sharedPreferences.edit();
                     editor.putString("token",saveToken);

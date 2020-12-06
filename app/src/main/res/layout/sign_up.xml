@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_marginBottom="1dp"
@@ -37,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:gravity="center"
         android:padding="10dp"
         android:hint="Full Name"/>
     <EditText
@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:padding="10dp"
+        android:gravity="center"
         android:maxLength="10"
         android:hint="RegNumber"/>
     <EditText
@@ -52,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:gravity="center"
         android:inputType="textEmailAddress"
         android:hint="Email"/>
     <EditText
@@ -60,12 +62,14 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:inputType="text"
+        android:gravity="center"
         android:hint="College"/>
     <EditText
         android:id="@+id/school"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:gravity="center"
         android:inputType="text"
         android:hint="School"/>
     <EditText
@@ -73,6 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:gravity="center"
         android:inputType="text"
         android:hint="Department"/>
     <EditText
@@ -80,6 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:gravity="center"
         android:inputType="number"
         android:hint="Level"/>
     <EditText
@@ -87,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:gravity="center"
         android:inputType="textPassword"
         android:hint="Password"/>
     <!--    <EditText-->

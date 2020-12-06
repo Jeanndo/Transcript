@@ -19,7 +19,8 @@
         <item>4,2</item>
     </string-array>
     <string name="title_activity_user_dash_board">UserDashBoard</string>
-    <string name="tab_text_1">Sent</string>
-    <string name="tab_text_2">Inbox</string>
-    <string name="tab_text_3">Profile</string>
+    <string name="tab_text_1">Request</string>
+    <string name="tab_text_2">Sent</string>
+    <string name="tab_text_3">Inbox</string>
+    <string name="tab_text_4">Profile</string>
 </resources>

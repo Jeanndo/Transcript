@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.example.mytranscript.Inbox;
 import com.example.mytranscript.Profile;
 import com.example.mytranscript.R;
+import com.example.mytranscript.Request;
 import com.example.mytranscript.SentRequests;
 
 /**
@@ -20,7 +21,7 @@ import com.example.mytranscript.SentRequests;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2,R.string.tab_text_3};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_3,R.string.tab_text_2,R.string.tab_text_4};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -33,13 +34,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
        Fragment fragment = null;
        switch (position){
            case 0:
-               fragment = new SentRequests();
+               fragment = new Request();
+               break;
+           case 1:
+               fragment =  new Inbox();;
                break;
 
-           case 1:
-               fragment = new Inbox();
-               break;
            case 2:
+               fragment =  new SentRequests();
+               break;
+           case 3:
                fragment = new Profile();
                break;
        }
@@ -55,6 +59,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 3;
+        return 4;
     }
 }
